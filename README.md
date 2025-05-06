@@ -47,6 +47,10 @@ We use an extremely aggressive `TTL` of 5 seconds. I'm not sure what the actual 
 With more time, I'd optimize to request a more optimized `TTL` depending on the urgency of a specific race's start time.
 i.e. if a race's start time was in 30 minutes, we might request every 2 minutes, but if a race starts in 90 seconds, we might request every 15 seconds.
 
+#### Displaying 5 Next To Go Races When Filtering
+Something that I missed is ensuring that at least 5 races are displayed even when the API did not return at least 5 races with the selected filtered category id.
+This would be something to improve with more time where I could request more races if there was not enough meeting the criteria to display 5.
+
 #### Repository/Polling
 There are many options when polling and if sticking to using no `Combine` and only `Swift Concurrency` there might be better paths depending on the needs.
 For example, I believe `AsyncStream` is limited in how clients consume its data. Possibly using an actor that manages some state could provide a better path.
