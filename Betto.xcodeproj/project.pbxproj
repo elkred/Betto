@@ -6,11 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		3181B1B12DC8BE5D00463F94 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3181B1B02DC8BE5D00463F94 /* Alamofire */; };
-		3181B1B32DC8BE5D00463F94 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 3181B1B22DC8BE5D00463F94 /* AlamofireDynamic */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		3181B1932DC8B7BC00463F94 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -57,8 +52,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3181B1B12DC8BE5D00463F94 /* Alamofire in Frameworks */,
-				3181B1B32DC8BE5D00463F94 /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,8 +112,6 @@
 			);
 			name = Betto;
 			packageProductDependencies = (
-				3181B1B02DC8BE5D00463F94 /* Alamofire */,
-				3181B1B22DC8BE5D00463F94 /* AlamofireDynamic */,
 			);
 			productName = Betto;
 			productReference = 3181B1852DC8B7BA00463F94 /* Betto.app */;
@@ -205,7 +196,6 @@
 			mainGroup = 3181B17C2DC8B7BA00463F94;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				3181B1AF2DC8BE5D00463F94 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3181B1862DC8B7BA00463F94 /* Products */;
@@ -342,6 +332,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -398,6 +389,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 6.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -475,7 +467,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = red.elk.BettoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Betto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Betto";
 			};
@@ -494,7 +486,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = red.elk.BettoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Betto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Betto";
 			};
@@ -511,7 +503,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = red.elk.BettoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Betto;
 			};
@@ -528,7 +520,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = red.elk.BettoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Betto;
 			};
@@ -574,30 +566,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		3181B1AF2DC8BE5D00463F94 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.10.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		3181B1B02DC8BE5D00463F94 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3181B1AF2DC8BE5D00463F94 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-		3181B1B22DC8BE5D00463F94 /* AlamofireDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3181B1AF2DC8BE5D00463F94 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = AlamofireDynamic;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3181B17D2DC8B7BA00463F94 /* Project object */;
 }
